@@ -1,0 +1,20 @@
+.testimonial-text
+{
+  width: 100%;
+
+}
+
+ul li{
+  text-align: right;
+  font-size: medium;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.client-box
+{
+  background-color: #09325b !important;
+}

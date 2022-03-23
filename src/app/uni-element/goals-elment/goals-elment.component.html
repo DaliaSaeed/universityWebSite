@@ -1,0 +1,24 @@
+<div class="section-full bg-white content-inner text-right" dir="rtl">
+  <div class="container">
+    <div class="row service-area-one">
+      <div class="col-lg-4 m-b30 hidden-sm">
+            <div class="rdx-thu"><img src="assets/images/student1.png" alt=""></div>
+          </div>
+         <div class="col-lg-8">
+          <div class="section-head">
+          <h2 class="title">أهداف الجامعة</h2>
+         </div>
+          <div class="row">
+           <div class="col-md-6 col-sm-6 m-b30" *ngFor="let item of uniGoals">
+           <div class="icon-bx-wraper right">
+              <div class="icon-bx-xs bg-secondry radius"> <a href="#" class="icon-cell"><i class="fa fa-book"></i></a> </div>
+              <div class="icon-content">
+                <h5 class="rdx-tilte">{{item.uniGoal}}</h5>
+              </div>
+            </div>
+          </div>
+         </div>
+          </div>
+         </div>
+  </div>
+</div>

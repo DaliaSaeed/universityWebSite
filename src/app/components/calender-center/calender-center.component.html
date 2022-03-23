@@ -1,0 +1,86 @@
+
+<div class="page-wraper">
+
+  <!-- header -->
+  <app-header-light3></app-header-light3>
+  <!-- header END -->
+  <!-- Content -->
+  <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <app-banner1 [data] = "banner"></app-banner1>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-area">
+          <div class="container max-w900">
+
+              <div class="row">
+
+        <ng-template [ngIf]="layout.sidebar">
+          <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='left'">
+            <aside class="side-bar sticky-top">
+              <app-search-form3></app-search-form3>
+              <app-recent-posts1></app-recent-posts1>
+              <app-our-gallery1></app-our-gallery1>
+              <app-category-list1></app-category-list1>
+              <app-tag-list1></app-tag-list1>
+            </aside>
+          </div>
+        </ng-template>
+
+      <!-- left part start -->
+      <div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+        <!-- blog start -->
+        <div class="blog-post blog-single">
+          <div class="dlab-info" dir="rtl">
+            <h3>رؤية المركز :</h3>
+            <p>” الريادة في مجال القياس والتقويم علي المستوي المحلي والاقليمي”.</p>
+
+            <h3>رسالة المركز :</h3>
+            <p>” تحسين منظومة التعليم بجامعة الأقصر من خلال استخدم تكنولوجيا حديثة ومتطورة في عمليات القياس والتقويم”. </p>
+
+            <h3>أهداف المركز :</h3>
+            <ul>
+              <li>نشر ثقافة القياس والتقويم ورفع مستوى الوعي بأهمية تطوير عمليات القياس والتقويم كأحد مداخل تحسين منظومة التعليم بالجامعة .</li>
+              <li>دعم الكليات لتطوير آليات تقويم الطلاب والامتحانات وإعلان النتائج واستثمارها في تطوير وتحسين مخرجات العملية التعليمية من خلال انشاء وحدات القياس والتقويم .</li>
+              <li>دعم الكليات فى انشاء وحدات للقياس و التقويم بها.</li>
+              <li>إعداد أدلة للضوابط والمعايير اللازمة لضمان جودة عمليات القياس والتقويم في ضوء المعايير الأكاديمية القياسية التي تتبناها الكليات .</li>
+              <li>توفير تدريب أعضاء هيئة التدريس والهيئة المعاونة بالكليات المختلفة في مجال القياس والتقويم .</li>
+              <li>توفير احتياجات الكليات من الخبراء المتخصصين في مجال القياس والتقويم .</li>
+              <li>متابعة إعداد وتحديث بنوك الأسئلة للمقررات الدراسية في ضوء نواتج التعلم المستهدفة والمعايير الاكاديمية للبرامج الدراسية في الكليات .</li>
+              <li>متابعة ضمان جودة وتطوير نظم تقويم الطلاب والامتحانات بالكليات .</li>
+              <li>تقديم الدعم الفني للكليات لمراجعة أساليب وأدوات التقويم ونتائج الامتحانات .</li>
+              <li>متابعة مؤشرات قياس رضا الطلاب وأعضاء هيئة التدريس حول نظم القياس وتقويم الطلاب والامتحانات بالكليات .</li>
+              <li>مراجعة و اعداد التقارير السنوية الخاصة بتقييم اعمال الأمتحانات و إعداد خطط تنفيذية للإجراءات التصحيحية لنقاط الضعف و التأكيد على تعزيز نقاط القوة.</li>
+              <li>تقديم الأستشارات اللازمة فى المجالات الأحصائية و القياس و التقويم داخل الجامعة و خارجها.</li>
+              <li>التقويم المستمر للعملية التعليمية من خلال قياس مدى تحقق معايير جودة الأداء لدى جميع عناصر العملية التعليمية.</li>
+              <li>تبنى نظم تقويم للطلاب باستخدام اساليب تربوية و تكنولوجيا حديثة.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Side bar start -->
+      <ng-template [ngIf]="layout.sidebar">
+        <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='right'">
+          <aside class="side-bar sticky-top">
+            <app-search-form3></app-search-form3>
+            <app-recent-posts1></app-recent-posts1>
+            <app-our-gallery1></app-our-gallery1>
+            <app-category-list1></app-category-list1>
+            <app-tag-list1></app-tag-list1>
+          </aside>
+        </div>
+      </ng-template>
+          </div>
+      </div>
+  </div>
+  <!-- Content END-->
+<!-- Footer -->
+ <!-- Newsletter -->
+
+ <!-- Footer -->
+  <app-footer13></app-footer13>
+  <!-- Footer END-->
+  <button class="scroltop fa fa-chevron-up" ></button>
+</div>

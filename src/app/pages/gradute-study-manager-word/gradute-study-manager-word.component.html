@@ -1,0 +1,81 @@
+
+<div class="page-wraper">
+
+  <!-- header -->
+  <app-gradute-affairs-header></app-gradute-affairs-header>
+  <!-- header END -->
+  <!-- Content -->
+  <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <app-banner3 [data] = "banner"></app-banner3>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-area">
+          <div class="container max-w900">
+
+              <div class="row">
+
+        <ng-template [ngIf]="layout.sidebar">
+          <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='left'">
+            <aside class="side-bar sticky-top">
+              <app-search-form3></app-search-form3>
+              <app-recent-posts1></app-recent-posts1>
+              <app-our-gallery1></app-our-gallery1>
+              <app-category-list1></app-category-list1>
+              <app-tag-list1></app-tag-list1>
+            </aside>
+          </div>
+        </ng-template>
+
+                  <!-- left part start -->
+      <div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+                      <!-- blog start -->
+        <div class="blog-post blog-single">
+          <div class="dlab-info">
+            <div class="dlab-media">
+              <!-- <a href="javascript:void(0);"><img src="{{baseUrl + president.presidentImage}}" alt="Luxor University President Image" class="img" ></a> -->
+            </div>
+            <br/>
+            <h5 class="dlab-title text-center">بسم الله الرحمن الرحيم</h5>
+
+            <div class="dlab-post-text text text-right">
+              <p>{{manager.managerWord}}</p>
+              <br>
+              <br>
+              <p>،،،والله ولى التوفيق</p>
+            </div>
+            <div class="post-footer">
+              <div class="dlab-meta">
+                <h6 class="title">الأستاذ  / {{manager.fullName}} </h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Side bar start -->
+      <ng-template [ngIf]="layout.sidebar">
+        <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='right'">
+          <aside class="side-bar sticky-top">
+            <app-search-form3></app-search-form3>
+            <app-recent-posts1></app-recent-posts1>
+            <app-our-gallery1></app-our-gallery1>
+            <app-category-list1></app-category-list1>
+            <app-tag-list1></app-tag-list1>
+          </aside>
+        </div>
+      </ng-template>
+          </div>
+      </div>
+  </div>
+  <!-- Content END-->
+<!-- Footer -->
+ <!-- Newsletter -->
+
+ <!-- Footer -->
+  <app-footer13></app-footer13>
+  <!-- Footer END-->
+  <button class="scroltop fa fa-chevron-up" ></button>
+</div>

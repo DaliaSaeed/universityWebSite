@@ -1,0 +1,26 @@
+span , p , h1 , h2,h3 , h4 , h5 ,h6 , a  , li{
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.sub-menu  , .mega-menu
+{
+    text-align: right !important;
+}
+
+.sub-menu li a
+{
+    background-color: #252525;
+    border-radius: 25px;
+}
+
+.mega-menu
+{
+  width: 85% !important;
+}
+
+.service-list
+{
+  text-align: right;
+}
+
+

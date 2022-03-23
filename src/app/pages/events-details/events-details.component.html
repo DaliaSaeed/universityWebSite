@@ -1,0 +1,82 @@
+
+<div class="page-wraper">
+
+    <!-- header -->
+    <app-header-light2></app-header-light2>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-gray">
+        <!-- inner page banner -->
+        <app-banner1 [data] = "banner"></app-banner1>
+        <!-- inner page banner END -->
+		<div class="content-area">
+            <div class="container"  dir="rtl">
+                <div class="row">
+
+                  <!-- Side bar start -->
+                    <div class="col-lg-3 col-md-5 m-b30">
+                        <aside class="side-bar sticky-top">
+                            <div class="widget widget_event_info">
+                                <h5 class="widget-title style-1" > &nbsp; التفاصيل</h5>
+                              <ul>
+                                <li>
+                                  <i class="la la-user-circle"></i>
+                                  <span class="title">الموقع &nbsp; </span>
+                                  <span class="info">{{New.location}}</span>
+                                </li>
+                                <li>
+                                  <i class="la la-calendar"></i>
+                                  <span class="title">تاريخ الخبر
+                                    &nbsp;
+                                  </span>
+                                  <span class="info">{{New.date_create | date : 'yyyy-MMMM-dd'}}</span>
+                                </li>
+                                <li>
+                                  <i class="la la-clock-o"></i>
+                                  <span class="title">الوقت &nbsp;</span>
+                                  <span class="info">{{New.time}}</span>
+                                </li>
+
+                              </ul>
+                            </div>
+
+                        </aside>
+                    </div>
+                    <!-- Side bar END -->
+
+                    	<!-- left part start -->
+              <div class="col-lg-9 col-md-7">
+              <div class="event-single">
+              <div class="dlab-post-meta">
+                <ul>
+                  <li class="post-author"> <i class="la la-clock"></i> {{New.time}} </li>
+                  <li class="post-tag"> <i class="ti-location-pin"></i> {{New.location}} </li>
+                </ul>
+              </div>
+              <h2 class="dlab-title" >{{New.title}}</h2>
+              <div class="dlab-media m-b30">
+                <a href="javascript:void(0);"><img src="{{baseUrl+New.imgaes[0]}}" alt=""></a>
+              </div>
+              <div class="dlab-post-text">
+                 <p>
+                  {{New.newDetails}}
+                 </p>
+              </div>
+            </div>
+                    </div>
+            <!-- left part start -->
+
+                </div>
+            </div>
+        </div>
+	</div>
+    <!-- Content END-->
+    <!-- Footer -->
+   <!-- Newsletter -->
+
+   <!-- Footer -->
+    <app-footer13></app-footer13>
+    <!-- Footer END-->
+    <!-- scroll top button -->
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>

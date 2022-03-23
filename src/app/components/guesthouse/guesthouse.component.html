@@ -1,0 +1,96 @@
+
+<div class="page-wraper">
+
+  <!-- header -->
+  <app-header-light3></app-header-light3>
+  <!-- header END -->
+  <!-- Content -->
+  <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <app-banner1 [data] = "banner"></app-banner1>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-area">
+          <div class="container max-w900">
+
+              <div class="row">
+
+        <ng-template [ngIf]="layout.sidebar">
+          <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='left'">
+            <aside class="side-bar sticky-top">
+              <app-search-form3></app-search-form3>
+              <app-recent-posts1></app-recent-posts1>
+              <app-our-gallery1></app-our-gallery1>
+              <app-category-list1></app-category-list1>
+              <app-tag-list1></app-tag-list1>
+            </aside>
+          </div>
+        </ng-template>
+
+      <!-- left part start -->
+      <div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+        <!-- blog start -->
+        <div class="blog-post blog-single">
+          <div class="dlab-info" dir="rtl">
+              <h4>الوصف العام</h4>
+              <ul>
+                <li>يتكون دار ضيافة جامعة الأقصر من أربع أدوار رئيسية ويحتوي على 16 شقة فندقية متضمنة 32 غرفة فندقية و56 سرير </li>
+                <li>دار الضيافة يعمل بصفه دائمة طوال أيام الأسبوع ولا يوجد عطلات رسمية.</li>
+                <li>خدمات الإقامة والاعاشة بدار الضيافة متاحة للجميع ولا يقتصر على فئة معينه من المجتمع.</li>
+                <li>يوفر دار الضيافة خدمات الإقامة لأعضاء هيئة التدريس ومعاونيهم من الجامعات المصرية والأجانب الزائرين لجامعة الأقصر وضيوف مؤتمرات الجامعة .</li>
+              </ul>
+
+              <h4>رسوم الإقامة والاعاشة</h4>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>إقامة الفرد في الغرفة المفردة Single Room</td>
+                    <td>100 جنية مصري / الليلة</td>
+                  </tr>
+                  <tr>
+                    <td>إقامة الفرد في الغرفة المزدوجة Double Room</td>
+                    <td>80 جنية مصري / الليلة</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h5>كما يقدم دار الضيافة نسبة خصم للإقامة فترات ممتدة كالآتي:</h5>
+              <ul>
+                <li>15 % خصم في حالة الإقامة لمدة 10 أيام فأكثر .</li>
+                <li>30 % خصم في حالة الإقامة لمدة 20 أيام فأكثر .</li>
+                <li>40 % خصم في حالة الإقامة لمدة شهر كامل .</li>
+               </ul>
+               <p>جميع الأسعار السابقة دون أي وجبات Meals</p>
+
+               <h4>الموقع</h4>
+               <p>الأقصر - مدينة طيبة الجديد - بجوار موقف السيارات</p>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115026.51731804678!2d32.7755754312833!3d25.718370613043003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1641301790643!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Side bar start -->
+      <ng-template [ngIf]="layout.sidebar">
+        <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='right'">
+          <aside class="side-bar sticky-top">
+            <app-search-form3></app-search-form3>
+            <app-recent-posts1></app-recent-posts1>
+            <app-our-gallery1></app-our-gallery1>
+            <app-category-list1></app-category-list1>
+            <app-tag-list1></app-tag-list1>
+          </aside>
+        </div>
+      </ng-template>
+          </div>
+      </div>
+  </div>
+  <!-- Content END-->
+<!-- Footer -->
+ <!-- Newsletter -->
+
+ <!-- Footer -->
+  <app-footer13></app-footer13>
+  <!-- Footer END-->
+  <button class="scroltop fa fa-chevron-up" ></button>
+</div>

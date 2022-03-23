@@ -1,0 +1,15 @@
+.dlab-info
+{
+  text-align: right;
+  justify-content: right;
+}
+
+li {
+   text-align: right;
+   justify-content: right;
+   font-size: large;
+}
+
+p{
+  font-size: large;
+}

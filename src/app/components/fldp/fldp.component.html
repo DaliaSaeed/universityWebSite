@@ -1,0 +1,131 @@
+
+<div class="page-wraper">
+
+  <!-- header -->
+  <app-header-light3></app-header-light3>
+  <!-- header END -->
+  <!-- Content -->
+  <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <app-banner1 [data] = "banner"></app-banner1>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-area">
+          <div class="container max-w900">
+
+              <div class="row">
+
+        <ng-template [ngIf]="layout.sidebar">
+          <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='left'">
+            <aside class="side-bar sticky-top">
+              <app-search-form3></app-search-form3>
+              <app-recent-posts1></app-recent-posts1>
+              <app-our-gallery1></app-our-gallery1>
+              <app-category-list1></app-category-list1>
+              <app-tag-list1></app-tag-list1>
+            </aside>
+          </div>
+        </ng-template>
+
+      <!-- left part start -->
+      <div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+        <!-- blog start -->
+        <div class="blog-post blog-single">
+          <div class="dlab-info" dir="rtl">
+
+               <h3>رؤية المركز ورسالته وأهدافه</h3>
+               <ul>
+                 <li>رؤية المركز: تحقيق المعايير الأكاديمية الدولية للتميز في التدريب والتنمية المتكاملة لأعضاء هيئة التدريس والقيادات على المستوى المحلى والإقليمي .</li>
+                 <li>رسالة المركز: يعمل مركز تنمية قدرات أعضاء هيئة التدريس والقيادات بجامعة الأقصر على إحداث تنمية بشرية متكاملة ومتميزة تلبي احتياجات سوق العمل المحلي والإقليمي والدولي، وبصورة تنافسية متميزة.</li>
+                 <li>أهداف المركز: يهدف المركز إلى:
+                   <ol style="margin-right: 10%;">
+                     <li>وضع برامج التنمية المهنية لأعضاء هيئة التدريس ومعاونيهم والقيادات في مجالات تطوير المناهج وأساليب التدريس والامتحانات والعمل الإداري والقيادي، وإعداد مشروعات البحوث والإشراف على تنفيذها .</li>
+                     <li>وضع برامج التدريب والتأهيل المستمر للعاملين في الأقسام الأكاديمية بما يتناسب مع تخصصاتهم ، وكذلك للعاملين في الوحدات التعليمية المساندة والإشراف على تنفيذها .</li>
+                     <li>إصدار المطبوعات والنشرات اللازمة للدورات التدريبية وتصميم وإعداد الحقائب والملفات التدريبية العلمية المتخصصة .</li>
+                     <li>تقديم الاستشارات الفنية في المجالات التدريبية للقطاع الحكومي والخاص، والإشراف على تنفيذها داخل الجامعة وخارجها.</li>
+                     <li>اقتراح برامج التأهيل المستمر التي يمكن للجامعة تقديمها لأعضاء هيئة التدريس ومعاونيهم وللعاملين داخل الجامعة والمجتمع المدني وتنفيذها.</li>
+                     <li>إعداد دراسات الجدوى العلمية الخاصة بإنشاء المؤسسات الأكاديمية وأقسامها .</li>
+                     <li>تقديم الاستشارات العلمية والفنية والاقتصادية لكافة الخدمات التعليمية.</li>
+                     <li>اقتراح إنشاء كليات ومعاهد وأقسام أكاديمية جديدة في ضوء احتياجات المجتمع.</li>
+                     <li>يجوز استحداث دورات جديدة طبقاً لاحتياجات المتدربين من أعضاء هيئة التدريس والقيادات والمجتمع المدني.</li>
+                   </ol>
+                 </li>
+               </ul>
+
+               <h3>تشـكـيل مجـلـس الإدارة</h3>
+                 <table>
+                    <tbody>
+                      <tr>
+                        <td>1-السيد أ.د / عميد كلية الفنون الجميلة</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>2-السيد أ.د / عميد كلية الألسن</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>3-السيد أ.د / عميد كلية الآثار</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>4-السيد أ.د / عميد كلية السياحة والفنادق</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>5-السيد أ.د / محمود النوبي احمد سليمان أستاذ الأدب بكلية الألسن</td>
+                        <td>مديراً للمركز</td>
+                      </tr>
+                      <tr>
+                        <td>6-عدد ( 2) من أعضاء هيئة التدريس (د/ أحمد عبيد – د/ سلامة حامد )</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>7-السيد / أمين عام الجامعة المساعد</td>
+                        <td>عضوا</td>
+                      </tr>
+                      <tr>
+                        <td>8-السيد المسئول المالي والإداري (أ/ سيد عبد العاطي)</td>
+                        <td>عضوا</td>
+                      </tr>
+                    </tbody>
+                 </table>
+
+
+                 <h3>الفريق الإداري</h3>
+                 <table>
+                   <tbody>
+                     <tr>
+                       <td>أ.د/ محمود النوبي أحمد</td>
+                       <td>مدير المركز</td>
+                     </tr>
+                   </tbody>
+                 </table>
+         </div>
+        </div>
+      </div>
+
+
+       <!-- Side bar start -->
+      <ng-template [ngIf]="layout.sidebar">
+        <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='right'">
+          <aside class="side-bar sticky-top">
+            <app-search-form3></app-search-form3>
+            <app-recent-posts1></app-recent-posts1>
+            <app-our-gallery1></app-our-gallery1>
+            <app-category-list1></app-category-list1>
+            <app-tag-list1></app-tag-list1>
+          </aside>
+        </div>
+      </ng-template>
+          </div>
+      </div>
+  </div>
+  <!-- Content END-->
+<!-- Footer -->
+ <!-- Newsletter -->
+
+ <!-- Footer -->
+  <app-footer13></app-footer13>
+  <!-- Footer END-->
+  <button class="scroltop fa fa-chevron-up" ></button>
+</div>

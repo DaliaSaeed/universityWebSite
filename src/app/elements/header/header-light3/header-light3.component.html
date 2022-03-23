@@ -1,0 +1,265 @@
+<header class="site-header mo-left header" >
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between align-items-center">
+					<div class="dlab-topbar-left">
+						<ul>
+							<li><i class="la la-phone-volume"></i>( +2 ) 095-2287245</li>
+							<li><i class="las la-map-marker"></i>جمهورية مصــر العـربية - الأقصـر -
+                العـواميـة</li>
+						</ul>
+					</div>
+					<div class="dlab-topbar-right">
+						<ul>
+							<li><i class="la la-clock"></i>{{date  | date:'yyyy-MM-dd'}}</li>
+							<li><i class="las la-envelope-open"></i>info@Luxor.edu.eg</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- main header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg" dir="rtl">
+            <div class="main-bar clearfix ">
+              <div class="container clearfix">
+              <!-- website logo -->
+               <div class="logo-header mostion logo-dark">
+					       	<a [routerLink]="['/home-university']"><img src="assets/images/logo.png" alt=""></a>
+				     	</div>
+
+               <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+          <!-- main nav -->
+         <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown" >
+
+          <div class="logo-header d-md-block d-lg-none">
+            <a [routerLink]="['/home-university']"><img src="assets/images/logo.png" alt=""></a>
+          </div>
+
+          <ul class="nav navbar-nav" dir="rtl" style="justify-content: center; text-align: center;">
+            <!--Main Page-->
+							<li>
+								<a [routerLink]="['/home-university']">الرئيسية</a>
+							</li>
+               <!--About University-->
+							<li>
+								<a href="javascript:void(0);">عن الجامعة &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu tab-content" >
+									<li>
+										<a  [routerLink]="['/presidentword']">
+											<i class="fa fa-file" aria-hidden="true"></i> &nbsp;
+											كلمة رئيس الجامعة</a>
+									</li>
+									<li>
+										<a [routerLink]="['/university-history']">
+											<i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp;
+											تاريخ الجامعة</a>
+									</li>
+									<li>
+										<a [routerLink]="['/university-goals']">
+											<i class="fa fa-check" aria-hidden="true"></i> &nbsp;
+											أهداف الجامعة</a>
+									</li>
+									<li>
+										<a [routerLink]="['/university-vision-message']">
+											<i class="fa fa-list-ul" aria-hidden="true"></i> &nbsp;
+											رسالة الجامعة</a>
+									</li>
+									<li>
+										<a [routerLink]="['/university-vision-message']">
+											<i class="fa fa-eye" aria-hidden="true"></i> &nbsp;
+											رؤية الجامعة</a>
+									</li>
+								</ul>
+							</li>
+              <!--Academnic Staff-->
+							<li class="has-mega-menu"> <a href="javascript:void(0);">الشؤون الأكاديمية &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+								<ul class="mega-menu">
+									<li>
+										<a href="javascript:void(0);">كليات الجامعة ومعاهدها</a>
+										<ul>
+
+											<li><a href="http://luxor.edu.eg:8100/">
+												<i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
+												كلية الحاسبات والمعلومات
+											</a></li>
+
+											<li><a href="http://luxor.edu.eg:8101/">
+												<i class="fa fa-paint-brush" aria-hidden="true"></i> &nbsp;
+												كلية الفنون الجميلة
+											</a></li>
+
+											<li><a href="http://luxor.edu.eg:8102/">
+												<i class="fa fa-building" aria-hidden="true"></i> &nbsp;
+												كلية الآثار
+											</a></li>
+
+											<li><a>
+												<i class="fa fa-book" aria-hidden="true"></i> &nbsp;
+												كلية الألسن
+											</a></li>
+
+											<li><a href="http://luxor.edu.eg:8103/">
+												<i class="fa fa-ship" aria-hidden="true"></i> &nbsp;
+												كلية سياحة وفنادق
+											</a></li>
+
+											<li><a>
+												<i class="fa fa-stethoscope" aria-hidden="true"></i> &nbsp;
+												كلية الطب
+											</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<a href="javascript:void(0);">برامج المرحلة الجامعية الأولى</a>
+
+									</li>
+
+									<li>
+										<a href="javascript:void(0);">البرامج النوعية بنظام الساعات المعتمدة</a>
+
+									</li>
+
+									<li>
+										<a href="javascript:void(0);">برامج الدراسات العليا</a>
+									</li>
+								</ul>
+							</li>
+                <!--University Partions-->
+							<li>
+								<a href="javascript:void(0);">القطاعات &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a [routerLink]="['/students-affairs']" >
+										<i class="fa fa-university"></i> &nbsp;
+										قطاع شؤون التعليم والطلاب
+									</a></li>
+									<li><a [routerLink]="['/gradute-affairs']" >
+										<i class="fa fa-graduation-cap"></i> &nbsp;
+										قطاع الدراسات العليا والبحوث
+									</a></li>
+									<li><a >
+										<i class="fa fa-users"></i> &nbsp;
+										قطاع شؤون خدمة المجتمع والبيئة
+									</a></li>
+								</ul>
+							</li>
+               <!-- University offices-->
+							<li>
+								<a href="javascript:void(0);">المراكز والوحدات  &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu tab-content" >
+									<li>
+										<a href="javascript:void(0);">
+											<i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+										   مركز تكنولوجيا المعلومات
+                    </a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											<i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+										     مركز تنمية قدرات أعضاء هيئة التدريس والقيادات
+                    </a>
+									</li>
+
+								</ul>
+							</li>
+                <!--Scinific Researchs-->
+							<li> <a href="javascript:void(0);">المؤتمرات</a>
+							</li>
+							<!--Digital Services-->
+							<li class="has-mega-menu">
+								<a href="javascript:void(0);"> الخدمات الرقمية &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+                  <ul class="mega-menu">
+                    <li>
+                      <a href="javascript:void(0);">خدمات الطلاب</a>
+                      <ul>
+                        <li><a href="https://e-learning.luxor.edu.eg">
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                           المنصة التعليمية الالكرونية
+                        </a></li>
+
+                        <li><a  href="https://e-learning.luxor.edu.eg">
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                           الجدول الدراسي
+                        </a></li>
+                        <li><a href="http://luxor.edu.eg:8083">
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                            نظام التربية العسكرية
+                        </a></li>
+                        <li><a href="https://e-learning.luxor.edu.eg">
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                        النتائج
+                        </a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">خدمات أعضاء هيئة التدريس </a>
+                       <ul>
+                        <li><a href="http://luxor.edu.eg:8081">
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                           نظام مركز تنمية قدرات أعضاء هيئة التدريس
+                        </a></li>
+                       </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">خدمات الدراسات العليا </a>
+                       <ul>
+                        <li><a>
+                          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                             نظام التسجيل في الدراسات العليا
+                        </a></li>
+                       </ul>
+                    </li>
+                  </ul>
+							</li>
+							<!--News-->
+							<li> <a [routerLink]="['/event']"> آخر الأخبار</a>
+							</li>
+               <!--Projects and Centers-->
+							<li>
+								<a href="javascript:void(0);">مراكز ومشاريع &nbsp; &nbsp;<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a [routerLink]="['/fldp']">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+										مركز تنمية قدرات أعضاء هيئة التدريس والقيادات
+									</a></li>
+									<li><a [routerLink]="['/CMC']">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+								      مراكز  القياس والتقويم
+									</a></li>
+									<li><a [routerLink]="['/InternationalCooperationExternalRelations']" >
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+									     مكتب التعاون الدولي والعلاقات الخارجية
+									</a></li>
+                  <li>
+                    <a [routerLink]="['/guesthouse']">
+                      <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> &nbsp;
+                      دار الضيافة</a>
+                  </li>
+								</ul>
+							</li>
+             	<!--Contact with Us-->
+							<li> <a [routerLink]="['/contact-1']">تواصل معنا</a>
+							</li>
+        </ul>
+						<div class="dlab-social-icon">
+							<ul>
+								<li><a class="site-button circle fa fa-facebook" href="javascript:void(0);"></a></li>
+								<li><a class="site-button  circle fa fa-twitter" href="javascript:void(0);"></a></li>
+								<li><a class="site-button circle fa fa-linkedin" href="javascript:void(0);"></a></li>
+								<li><a class="site-button circle fa fa-instagram" href="javascript:void(0);"></a></li>
+							</ul>
+						</div>
+
+
+          </div>
+          </div>
+            </div>
+        </div>
+        <!-- main header END -->
+    </header>

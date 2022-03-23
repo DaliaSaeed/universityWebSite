@@ -1,0 +1,100 @@
+
+<div class="page-wraper">
+
+  <!-- header -->
+  <app-header-light3></app-header-light3>
+  <!-- header END -->
+  <!-- Content -->
+  <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <app-banner1 [data] = "banner"></app-banner1>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-area">
+          <div class="container max-w900">
+
+              <div class="row">
+
+        <ng-template [ngIf]="layout.sidebar">
+          <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='left'">
+            <aside class="side-bar sticky-top">
+              <app-search-form3></app-search-form3>
+              <app-recent-posts1></app-recent-posts1>
+              <app-our-gallery1></app-our-gallery1>
+              <app-category-list1></app-category-list1>
+              <app-tag-list1></app-tag-list1>
+            </aside>
+          </div>
+        </ng-template>
+
+      <!-- left part start -->
+      <div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+        <!-- blog start -->
+        <div class="blog-post blog-single">
+          <div class="dlab-info" dir="rtl">
+               <h3>مقدمة:</h3>
+               <p>قرار رئيس جامعة الأقصر رقم (91)، في الأول من أكتوبر لعام 2019، ليتم انشاء مكتب التعاون الدولي والعلاقات الخارجية بالجامعة، وبناءً عليه تم الاعداد للمكتب على أن يقوم بالمهام المكلف بها وهي على النحو التالي:</p>
+               <ul>
+                 <li>هيكلة برامج ومشاريع التعاون الدولي.</li>
+                 <li>إنشاء وتعزيز الاتصال بالهيئات و المؤسسات الداعمة لتمويل البرامج.</li>
+                 <li>ابرام الاتفاقيات الدولية مع الجامعات، والهيئات الدولية.</li>
+                 <li>تصميم و اعداد مقترحات مشاريع التمويل.</li>
+
+               </ul>
+
+               <h3>الرؤية:</h3>
+               <p>أن تتصدر جامعة الأقصر قائمة تصنيف الجامعات المتميزة على الصعيد العربي و العالمي.</p>
+
+               <h3>الرسالة:</h3>
+               <p>تعزيز سُبل التعاون الدولي في مجالات التعليم العالي والبحث العلمية وخدمة البيئة وتنمية المجتمع، كذلك إقامة جسور التبادل الثقافي بين جامعة الأقصر والجامعات العالمية.</p>
+
+               <h3>أهداف المكتب:</h3>
+               <p>تتمحور مهام مكتب التعاون الدولي حول التدويل وتتمركز أهدافه على النحو التالي:</p>
+
+               <ul>
+                 <li>رفع الكفاءات والخبرات الدولية لأعضاء هيئة التدريس من أجل تقديم خدمات تعليمية أفضل.</li>
+                 <li>وضع جامعة الأقصر في مصاف الجامعات العالمية في التصنيف الدولي عن طريق تقديم الدعم الفني لأعضاء هيئة التدريس ومعاونيهم في مجال النشر الدولي.</li>
+                 <li>ايجاد فرص تعاون دولي في مختلف التخصصات و المجالات الأكاديمية.</li>
+                 <li>تنشيط دور الجامعة وتعزيز الروابط الدولية للنهوض بمستوى أعضاء هيئة التدريس ودعم العملية التعلمية والبحثية، كذلك تطوير البرامج العلمية بالتعاون مع جامعات عالمية.</li>
+                 <li>ايجاد فرص دراسية و تدريب الطلاب بجامعة الأقصر وفق برامج التبادل العلمية والثقافية.</li>
+                 <li>اقامة ورش عمل للأعضاء هيئة التدريس و معاونيهم و الطلاب للتعريف بالفرص المتاحة لتمويل المشاريع البحثية و المنح الدراسية.</li>
+               </ul>
+
+
+               <h3>الشريحة المستهدفة:</h3>
+               <p>يقدم مكتب التعاون الدولي والعلاقات الخارجية بجامعة الأقصر للفئات الأتية:</p>
+               <ul>
+                 <li>أعضاء هيئة التدريس.</li>
+                 <li>معاوني أعضاء هيئة التدريس.</li>
+                 <li>طلاب جامعة الأقصر.</li>
+                <li>خريجي جامعة الأقصر.</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Side bar start -->
+      <ng-template [ngIf]="layout.sidebar">
+        <div class="col-xl-3 col-lg-4 col-md-12" *ngIf="layout.sidebarPosition=='right'">
+          <aside class="side-bar sticky-top">
+            <app-search-form3></app-search-form3>
+            <app-recent-posts1></app-recent-posts1>
+            <app-our-gallery1></app-our-gallery1>
+            <app-category-list1></app-category-list1>
+            <app-tag-list1></app-tag-list1>
+          </aside>
+        </div>
+      </ng-template>
+          </div>
+      </div>
+  </div>
+  <!-- Content END-->
+<!-- Footer -->
+ <!-- Newsletter -->
+
+ <!-- Footer -->
+  <app-footer13></app-footer13>
+  <!-- Footer END-->
+  <button class="scroltop fa fa-chevron-up" ></button>
+</div>
