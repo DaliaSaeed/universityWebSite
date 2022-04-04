@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AbstractComponent implements OnInit {
   banner : any = {
 
-		pagetitle: "نبذه مختصره",
+		pagetitle: "المؤتمر الثاني لكليه الألسن",
 		bg_image: "assets/images/banner/newsbnr.jpg",
-		title: "نبذه مختصره",
+		title: "المؤتمر الثاني لكليه الألسن",
 	}
 
   constructor() { }
